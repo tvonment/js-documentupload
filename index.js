@@ -24,10 +24,9 @@ app.use(formidableMiddleware({
 }));
 
 app.get('/', async (req, res) => {
-    await fetch('.auth/me')
-
-
-    res.render("docupload", { title: "Document Upload", user: "user" });
+    const auth = await fetch('.auth/me')
+    console.log(auth);
+    res.render("docupload", { title: "Document Upload", user: auth ? auth[0].user_id : "ANONYMOUS" });
 
 })
 
