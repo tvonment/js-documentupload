@@ -1,1 +1,5 @@
+.vscode
+.vs
+.deployment
 node_modules
+local.settings.json
