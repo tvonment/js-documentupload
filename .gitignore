@@ -1,5 +1,7 @@
 .vscode
 .vs
 .deployment
+tmp
+!tmp/.empty
 node_modules
 local.settings.json

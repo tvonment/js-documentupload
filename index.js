@@ -62,8 +62,6 @@ function handleFile(file) {
         const containerClient = blobServiceClient.getContainerClient("test");
         const blockBlobClient = containerClient.getBlockBlobClient(fileName);
         blockBlobClient.uploadFile(file.path);
-        console.log(blockBlobClient)
-        console.log(file.path)
         console.log("Uploaded: ", fileName);
         /*fs.unlink(file.path, (err) => {
             if (err) {
