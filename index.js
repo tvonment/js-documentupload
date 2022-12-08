@@ -24,15 +24,7 @@ app.use(formidableMiddleware({
 }));
 
 app.get('/', async (req, res) => {
-    let auth;
-    try {
-        auth = await fetch('.auth/me')
-        console.log(auth);
-    } catch (e) {
-        console.log("anonymous")
-    }
-    res.render("docupload", { title: "Document Upload", user: auth ? auth[0].user_id : "ANONYMOUS" });
-
+    res.render("docupload", { title: "Document Upload", user: "testuser" });
 })
 
 app.listen(port, () => {
@@ -70,13 +62,15 @@ function handleFile(file) {
         const containerClient = blobServiceClient.getContainerClient("test");
         const blockBlobClient = containerClient.getBlockBlobClient(fileName);
         blockBlobClient.uploadFile(file.path);
+        console.log(blockBlobClient)
+        console.log(file.path)
         console.log("Uploaded: ", fileName);
-        fs.unlink(file.path, (err) => {
+        /*fs.unlink(file.path, (err) => {
             if (err) {
                 throw err;
             }
             console.log("Delete tmp File successfully.");
-        });
+        });*/
     } catch (error) {
         console.log(error);
     }
