@@ -1,1 +1,9 @@
-{}
+{
+    "i18n": {
+        "file-upload": {
+            "name": "Name",
+            "size": "Grösse",
+            "lastModified": "zuletzt geändert"
+        }
+    }
+}

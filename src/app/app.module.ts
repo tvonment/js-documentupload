@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ObMasterLayoutModule, ObButtonModule, ObIconModule, multiTranslateLoader, ObHttpApiInterceptor, OB_BANNER, ObExternalLinkModule } from '@oblique/oblique';
+import { ObMasterLayoutModule, ObButtonModule, ObIconModule, multiTranslateLoader, ObHttpApiInterceptor, OB_BANNER, ObExternalLinkModule, ObFileUploadModule } from '@oblique/oblique';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { registerLocaleData } from '@angular/common';
 import localeDECH from '@angular/common/locales/de-CH';
@@ -34,12 +34,12 @@ registerLocaleData(localeITCH);
     ObMasterLayoutModule,
     BrowserAnimationsModule,
     ObButtonModule, // add other Oblique modules as needed
-    ObIconModule.forRoot(), HttpClientModule, TranslateModule.forRoot(multiTranslateLoader()), MatButtonModule, MatCardModule, MatIconModule, ObExternalLinkModule
+    ObIconModule.forRoot(), HttpClientModule, TranslateModule.forRoot(multiTranslateLoader()), MatButtonModule, MatCardModule, MatIconModule, ObExternalLinkModule, ObFileUploadModule
   ],
   providers: [
-    {provide: LOCALE_ID, useValue: 'de-CH'},
-    {provide: HTTP_INTERCEPTORS, useClass: ObHttpApiInterceptor, multi: true},
-    {provide: OB_BANNER, useValue: environment.banner}
+    { provide: LOCALE_ID, useValue: 'de-CH' },
+    { provide: HTTP_INTERCEPTORS, useClass: ObHttpApiInterceptor, multi: true },
+    { provide: OB_BANNER, useValue: environment.banner }
   ],
   bootstrap: [AppComponent]
 })
