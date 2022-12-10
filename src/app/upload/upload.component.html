@@ -5,7 +5,7 @@
             [multiple]="multipleFile" [singleRequest]="singleRequest" (uploadEvent)="uploadEvent($event)">
         </ob-file-upload>
         <br>
-        <h3>Uploaded files</h3>
+        <h3>{{ "i18n.file-upload.uploadedFiles" | translate }}</h3>
         <ob-file-info [getUploadedFilesUrl]="getUrl" [mapFunction]="mapData()" (uploadEvent)="uploadEvent($event)">
         </ob-file-info>
     </div>

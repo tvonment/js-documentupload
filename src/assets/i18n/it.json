@@ -1,1 +1,11 @@
-{}
+{
+    "i18n": {
+        "title": "Caricamento documento",
+        "file-upload": {
+            "name": "nome",
+            "size": "taglia",
+            "lastModified": "ultima modifica",
+            "uploadedFiles": "file caricati"
+        }
+    }
+}

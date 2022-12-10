@@ -12,7 +12,6 @@ import localeITCH from '@angular/common/locales/it-CH';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { TranslateModule } from '@ngx-translate/core';
 import { environment } from '../environments/environment';
-import { HomeComponent } from './home/home.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
@@ -25,7 +24,6 @@ registerLocaleData(localeITCH);
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     UploadComponent
   ],
   imports: [

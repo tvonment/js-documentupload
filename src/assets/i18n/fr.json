@@ -1,1 +1,11 @@
-{}
+{
+    "i18n": {
+        "title": "Téléchargement de documents",
+        "file-upload": {
+            "name": "nom",
+            "size": "taille",
+            "lastModified": "dernière modification",
+            "uploadedFiles": "fichiers téléchargés"
+        }
+    }
+}

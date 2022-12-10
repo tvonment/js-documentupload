@@ -1,5 +1,5 @@
-<ob-master-layout [navigation]="[{ url: 'home', label: 'home' },{ url: 'upload', label: 'upload' }]">
-	<ng-container obHeaderTitle>Document Upload</ng-container>
+<ob-master-layout [navigation]="[{ url: 'upload', label: 'Upload' }]">
+	<ng-container obHeaderTitle>{{ "i18n.title" | translate }}</ng-container>
 	<ng-container obFooterInfo>
 		<p>Oblique's footer</p>
 		<p>&copy; 2020 <span>{{ "i18n.oblique.footer.title" | translate }}</span></p>

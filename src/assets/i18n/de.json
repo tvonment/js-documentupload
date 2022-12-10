@@ -1,9 +1,11 @@
 {
     "i18n": {
+        "title": "Dokumenten Upload",
         "file-upload": {
             "name": "Name",
             "size": "Grösse",
-            "lastModified": "zuletzt geändert"
+            "lastModified": "zuletzt geändert",
+            "uploadedFiles": "hochgeladene Files"
         }
     }
 }
