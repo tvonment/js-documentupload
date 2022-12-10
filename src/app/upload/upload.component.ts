@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ObEUploadEventType, ObIFileDescription, ObIUploadEvent } from '@oblique/oblique';
 
-
 @Component({
   selector: 'app-upload',
   templateUrl: './upload.component.html',
@@ -10,8 +9,8 @@ import { ObEUploadEventType, ObIFileDescription, ObIUploadEvent } from '@oblique
 export class UploadComponent {
 
   logs: ObIUploadEvent[] = [];
-  uploadUrl = 'http://localhost:7071/api/docupload';
-  getUrl = 'http://localhost:7071/api/getfiles';
+  uploadUrl = 'https://testdocuploadthomas.azurewebsites.net/api/docupload?code=50H6odzfzyy0optYc9rhnZywQBxu9EBlJfZIlQDldADKAzFuHuAPTQ==';
+  getUrl = 'https://testdocuploadthomas.azurewebsites.net/api/getfiles?code=Zthc1Sj1gBLKNPoo0jEEn3YGtc_3D4qWyL-kHot6KYJBAzFuIlY3ww==';
   maxFileSize = 100;
   multipleFile = true;
   singleRequest = false;
