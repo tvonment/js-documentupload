@@ -40,6 +40,10 @@
             ],
             "scripts": [
               "node_modules/@oblique/oblique/ob-features.js"
+            ],
+            "allowedCommonJsDependencies": [
+              "ajv",
+              "ajv-formats"
             ]
           },
           "configurations": {
