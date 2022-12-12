@@ -31,7 +31,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: node-app
-          path: ./dist/js-documentupload
+          path: ./dist
 
   deploy:
     runs-on: ubuntu-latest
@@ -53,4 +53,4 @@ jobs:
           app-name: 'documentuploadtest'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_222232FB82894ED5807CC16CBE223A75 }}
-          package: ./dist/js-documentupload
+          package: ./js-documentupload
