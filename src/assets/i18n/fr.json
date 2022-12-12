@@ -6,6 +6,9 @@
             "size": "taille",
             "lastModified": "dernière modification",
             "uploadedFiles": "fichiers téléchargés"
+        },
+        "footer": {
+            "title": "Développé par Corporate Software AG"
         }
     }
 }
